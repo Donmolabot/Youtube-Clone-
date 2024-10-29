@@ -1,0 +1,158 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  background-color: rgb(16, 15, 15);
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+main {
+  display: grid;
+  grid-template-columns: 15vw 85vw;
+  grid-template-rows: 10vh 10vh 80vh;
+  background-color: #0f0f0f;
+}
+
+aside {
+  grid-row: 1/4;
+  color: white;
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
+
+aside div {
+  display: flex;
+  align-items: center;
+  padding: 0px 5px;
+  margin-left: 10px;
+  gap: 20px;
+}
+aside div i {
+  font-size: 20px;
+}
+.logo_div {
+  margin-top: -15px;
+}
+.hr {
+  height: 1px;
+  background-color: gray;
+  margin: 0%;
+}
+header {
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+}
+.searchSection {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-left: 100px;
+}
+.searchSection form {
+  display: flex;
+  height: 6vh;
+}
+.searchSection form input {
+  width: 40vw;
+  padding-left: 10px;
+  background-color: transparent;
+  border: 1px solid #222222;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.searchSection form button {
+  background-color: #222222;
+  border: 1px solid #222222;
+  width: 50px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: white;
+}
+header i {
+  font-size: 18px;
+}
+header button {
+  background: none;
+  border: none;
+  color: white;
+}
+.mic {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #222222;
+}
+.profileSection {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 10px;
+  overflow-x: auto;
+}
+nav a {
+  background-color: #222222;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  text-wrap: nowrap;
+}
+/* this for Chrome, Safari 'this is how to hide a scroll bar'  */
+nav::-webkit-scrollbar {
+  display: none;
+}
+/* this is for IE, Firefox. this is how to hide a scroll bar */
+nav {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.videoContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px;
+  border: none;
+  height: 120vh;
+}
+.videoContainer figure button {
+  /* border: 1px solid white; */
+  color: rgb(42, 8, 211);
+  padding: 7px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: #141414;
+}
+
+.videoContainer figcaption {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: start;
+  justify-content: space-between;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* margin: 5px 5px;
+  margin-top: 5px; */
+}
+.videoContainer figure figcaption p {
+  display: flex;
+  flex-direction: column;
+  /* padding: 5px; */
+}
+.icon_dot {
+  margin-top: -18px;
+}
+.round {
+  margin-top: -18px;
+  border-radius: 50%;
+}
